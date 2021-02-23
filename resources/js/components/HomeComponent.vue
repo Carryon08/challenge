@@ -3,9 +3,14 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Usuarios registrados
-                        <a class="btn btn-elevate btn-success float-right btn-circle"
-                           @click="modalType=true, showModal()">Nuevo usuario</a></div>
+                    <div class="card-header">
+                        <h2>Usuarios registrados
+                            <a class="btn btn-elevate btn-success float-right btn-circle"
+                               @click="modalType=true, showModal()">Nuevo usuario</a>
+                            <a class="btn btn-elevate btn-primary float-right btn-circle mr-2"
+                               href="/books">Lista de libros</a>
+                        </h2>
+                    </div>
 
                     <table class="table">
                         <thead>
@@ -81,8 +86,10 @@
                                 <label for="user_type_id" class="col-md-4 col-form-label text-md-right">Tipo de usuario</label>
 
                                 <div class="col-md-6">
-                                    <input id="user_type_id" type="number" class="form-control " v-model="user.user_type_id"
-                                           name="user_type_id" required autocomplete="new-password">
+                                    <select name="user_type_id" id="user_type_id" v-model="user.user_type_id" class="form-control">
+                                        <option value="2">Usuario</option>
+                                        <option value="1">Administador</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>

@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43a2c5b6-3cf1-421d-94d6-ad199ebda4c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/user/ProfileComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profile/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_21_061029_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_22_060347_create_books_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/CategoriesSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/books/IndexBooks.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/books/IndexBooks.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminAccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminAccess.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/HomeComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -154,12 +156,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1nA44HHTyCPMaaZRo5eE4s7BOqI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -188,30 +194,42 @@
       <option name="presentableId" value="Default" />
       <updated>1610819374907</updated>
       <workItem from="1610819405067" duration="19892000" />
-      <workItem from="1610894651414" duration="37199000" />
+      <workItem from="1610894651414" duration="39134000" />
+      <workItem from="1611853846457" duration="612000" />
+      <workItem from="1613971615068" duration="19910000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="350" y="62" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610928426948">
+    <state x="350" y="62" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614017408545">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="350" y="62" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1360.0.1360.768@0.0.1366.728" timestamp="1610928426948" />
-    <state x="294" y="147" key="com.intellij.ide.util.TipDialog" timestamp="1610894884753">
+    <state x="350" y="62" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614017408545" />
+    <state x="413" y="62" key="FileChooserDialogImpl" timestamp="1611857621761">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="413" y="62" key="FileChooserDialogImpl/0.0.1366.728/-1360.0.1360.768@0.0.1366.728" timestamp="1611857621761" />
+    <state x="294" y="147" key="com.intellij.ide.util.TipDialog" timestamp="1611853891687">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="294" y="147" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1360.0.1360.768@0.0.1366.728" timestamp="1611853891687" />
     <state x="294" y="147" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1610894884753" />
     <state x="287" y="38" width="791" height="652" key="find.popup" timestamp="1610829447213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="287" y="38" width="791" height="652" key="find.popup/0.0.1366.728/-1360.0.1360.768@0.0.1366.728" timestamp="1610829447213" />
-    <state x="255" y="159" key="run.anything.popup" timestamp="1610933561320">
+    <state x="255" y="159" key="run.anything.popup" timestamp="1614020966121">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="255" y="159" key="run.anything.popup/0.0.1366.728/-1360.0.1360.768@0.0.1366.728" timestamp="1610933561320" />
+    <state x="255" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1614020966121" />
     <state x="262" y="0" width="840" height="726" key="search.everywhere.popup" timestamp="1610928599157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

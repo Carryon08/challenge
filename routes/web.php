@@ -4,6 +4,8 @@ use App\Http\Controllers\InformationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +22,13 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::apiResource('information',InformationController::class);
+Route::get('/books', function () {
+    return view('books.IndexBooks');
+});
 Route::get('user/profile', [UserController::class, 'profile'])->name('user.profile');
+
+Route::Resource('book',BookController::class);
+Route::Resource('category',CategoryController::class);
 Route::middleware(['IsAdmin'])->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::apiResource('user', UserController::class);
